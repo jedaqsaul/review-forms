@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "username": "jedaqsaul",
+      "firstName": "Aquila",
+      "lastName": "Jedidia",
+      "email": "jedaqsaul@gmail.com",
+      "gender": "Male",
+      "course": "JavaScript",
+      "id": 1
+    },
+    {
+      "username": "Jerome",
+      "firstName": "Erick Mongare",
+      "lastName": "Mongare",
+      "email": "erickmongare@gmail.com",
+      "gender": "Female",
+      "course": "",
+      "id": 2
+    },
+    {
+      "username": "scratcher",
+      "firstName": "Aquila",
+      "lastName": "Jedidia",
+      "email": "fsfddsfdfdf",
+      "gender": "Male",
+      "course": "React",
+      "id": 3
+    },
+    {
+      "username": "admin",
+      "firstName": "Jason ",
+      "lastName": "Derulo",
+      "email": "jason@gmail.com",
+      "gender": "Male",
+      "course": "React",
+      "id": 4
+    }
+  ]
+}

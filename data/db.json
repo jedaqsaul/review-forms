@@ -10,15 +10,6 @@
       "id": 1
     },
     {
-      "username": "Jerome",
-      "firstName": "Erick Mongare",
-      "lastName": "Mongare",
-      "email": "erickmongare@gmail.com",
-      "gender": "Female",
-      "course": "",
-      "id": 2
-    },
-    {
       "username": "scratcher",
       "firstName": "Aquila",
       "lastName": "Jedidia",
@@ -35,6 +26,15 @@
       "gender": "Male",
       "course": "React",
       "id": 4
+    },
+    {
+      "username": "luckybunky",
+      "firstName": "Habakkuk",
+      "lastName": "Cresence",
+      "email": "habakkukcresence@gmail.com",
+      "gender": "Male",
+      "course": "Python",
+      "id": 6
     }
   ]
 }

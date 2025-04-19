@@ -1,28 +1,42 @@
 import React from "react";
-import "./UserCard.css";
 
-export default function UserCard({ user }) {
-  {
+export default function UserCard({ user, onDelete }) {
+  function handleDelete() {
+    fetch(`http://localhost:3000/users/${user.id}`, {
+      method: "DELETE",
+    })
+      .then(() => {
+        console.log("user deleted");
+        onDelete();
+      })
+      .catch((err) => console.error("delete failed", err));
   }
+
   return (
-    <div className="user-card">
-      <h3>{user.username}</h3>
+    <div className="bg-white p-4 rounded-lg shadow-md">
+      <h3 className="text-lg font-bold text-blue-700">{user.username}</h3>
       <p>
-        <strong>Name:</strong>
+        <span className="font-medium">Name:</span>
         {user.firstName} {user.lastName}
       </p>
       <p>
-        <strong>Email:</strong>
+        <span className="font-medium">Email:</span>
         {user.email}
       </p>
       <p>
-        <strong>Gender:</strong>
+        <span className="font-medium">Gender:</span>
         {user.gender}
       </p>
       <p>
-        <strong>Course:</strong>
+        <span className="font-medium">Course:</span>
         {user.course}
       </p>
+      <button
+        onClick={handleDelete}
+        className="mt-4 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
+      >
+        Delete
+      </button>
     </div>
   );
 }
